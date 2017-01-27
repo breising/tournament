@@ -1,0 +1,231 @@
+select 2+2 as a, 4+4 as b;
+select * from posts;
+/d posts
+\d posts
+\q
+CREATE DATABASE tournament
+\dt
+quit
+\q
+\q
+\dl
+CREATE DATABASE tournament
+\c tournament
+CREATE DATABASE tournament;
+\c tournament
+create database tournament;
+\c tournament
+i\ tournement.sql
+\c
+CREATE TABLE Players ( lastName TEXT,
+firstName TEXT,
+wins INT,
+matches INT,
+                     time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                     id SERIAL );
+i\ tournament.sql
+\i tournament
+\i tournament.sql
+ls
+CREATE TABLE Players ( lastName TEXT, firstName TEXT, wins INT, matches INT,time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, id SERIAL );
+CREATE TABLE Players (lastName text,firstName text,wins int,matches int,time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,id serial);
+\timing
+\d
+\d players
+CREATE TABLE Matches (round int,player1 text,player2 text,winner text,time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,id SERIAL);
+\d
+drop table players
+\d
+DROP TABLE players
+\d
+\d players
+DROP players
+\d
+;
+drop table players;
+\d
+drop table matches
+;
+drop table matches
+;
+drop table matches;
+\i tournament.sql;
+\d
+\q
+\c 
+\c tournament
+\i tournament/tournament.sql
+\i tournament/tournament.sql
+\d
+drop table matches;
+drop table players
+;
+\d
+\i tournament/tournament.sql
+\d
+\q
+\d
+\c tournament
+\d
+drop table matches
+;
+\d
+drop table players;
+\d
+import tournament/tournament.sql
+;
+\i tournament/tournament.sql
+\i tournament.sql
+\d
+\q
+\c tournament
+drop table players
+;
+drop table matches;
+\d
+\i tournament.sql
+\d
+\q
+\c tournament
+\d
+\d players
+select * from players
+;
+INSERT INTO players VALUES(George,8,9)
+;
+INSERT INTO players(name,wins,matches) VALUES(George,8,9)
+;
+INSERT INTO players(name,wins,matches) VALUES('George',8,9)
+;
+select * from players
+;
+\q
+\c tournament
+select * from players
+;
+\q
+\c tournament
+select * from players
+;
+\q
+\q
+\q
+\c tournament
+\d
+\d players
+\q
+\c tournament
+\d
+\d players
+delete * from players
+;
+delete from players;
+table players
+;
+\d
+select * from players
+;
+table players
+;
+\q
+\q
+\q
+\c tournament
+drop players
+;
+drop table players
+;
+\d
+CREATE TABLE players (id serial, name text, wins int, matches int,time TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+\d
+\q
+\c tournament
+\d
+drop table matches
+;
+\d
+CREATE TABLE matches (id SERIAL, winner text,loser text,time TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+\d
+\q
+tournament
+;
+\c tournament
+\d
+\d players
+talble players
+;
+table players;
+\q
+\c tournament
+table players
+;
+delete from players where id = 121
+;
+table players;
+\q
+\c tournament
+table players
+;
+\q
+\c tournament
+\d
+drop table matches
+;
+\d
+drop table players
+;
+\d
+CREATE TABLE players (id serial, name text, wins int, losses int,time TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+\d
+\q
+\c tournament
+\d
+drop table players
+;
+\d
+CREATE TABLE players (id serial PRIMARY KEY, 
+name text,
+);\q
+\c tournament
+\d
+CREATE TABLE players (id serial PRIMARY KEY, 
+name text,
+);\q
+\c tournament
+\d
+CREATE TABLE players (id serial PRIMARY KEY,name text,);
+CREATE TABLE players (id serial PRIMARY KEY,name text);
+CREATE TABLE matches (id serial PRIMARY KEY,winner INTEGER REFERENCES players(id),loser INTEGER REFERENCES players(id));
+\d
+\q
+\c tournament
+\d
+\d players
+table players
+;
+truncate table players
+;
+truncate table players cascade
+;
+table players
+;
+\q
+tournament
+;
+\c tournament
+table matches
+;
+truncate table matches cascade;
+\q
+\c tournament
+table players
+;
+\q
+\q
+\c tournament
+table players
+;
+table matches
+;
+\q
+\s tournament
